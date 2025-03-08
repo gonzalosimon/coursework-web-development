@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Commercial Internet Provision</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="/timeline">Timeline</a></li>
+          <li><a href="/early-isps">Early ISPs</a></li>
+          <li><a href="/commercial-provision">Commercial Provision</a></li>
+        </ul>
+      </nav>
+      <h1>Commercial Internet Provision</h1>
+    </header>
+
+    <main>
+      <% commercialData.forEach(entry => { %>
+        <section>
+          <h2>Period: <%= entry.yearRange %></h2>
+          <p><strong>Major Providers:</strong> <%= entry.majorProviders.join(', ') %></p>
+          <p><%= entry.description %></p>
+        </section>
+      <% }); %>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Early ISPs in the UK</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="/timeline">Timeline</a></li>
+          <li><a href="/early-isps">Early ISPs</a></li>
+          <li><a href="/commercial-provision">Commercial Provision</a></li>
+        </ul>
+      </nav>
+      <h1>Early Internet Service Providers</h1>
+    </header>
+
+    <main>
+      <section>
+        <% earlyISPs.forEach(isp => { %>
+          <article>
+            <h2><%= isp.ispName %></h2>
+            <h3>Founded: <%= isp.foundedYear %></h3>
+            <p><%= isp.content %></p>
+          </article>
+        <% }); %>
+      </section>
+    </main>
+  </body>
+</html>

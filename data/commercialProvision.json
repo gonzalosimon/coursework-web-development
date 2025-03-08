@@ -1,0 +1,13 @@
+[
+    {
+      "yearRange": "1999–2004",
+      "majorProviders": ["BT Openworld", "NTL", "Telewest"],
+      "description": "Commercial broadband emerged, replacing slow dial-up connections. Key ISPs invested in DSL and cable internet, pushing speeds to 512 kbps and beyond. Customer uptake was initially limited but grew as line rental costs fell."
+    },
+    {
+      "yearRange": "2005–2010",
+      "majorProviders": ["BT Broadband", "Virgin Media", "Sky Broadband"],
+      "description": "Competition intensified, leading to better pricing and faster ADSL services. Virgin Media launched cable broadband packages up to 20 Mbps, while Sky entered the market offering bundled TV and internet deals, reshaping the commercial ISP landscape."
+    }
+  ]
+  
