@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css');
+
+/* General Styles */
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+  margin: 0;
+  padding-top: 50px;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  border: none;
+}
+
+.navbar-nav li a {
+  color: #fff !important;
+}
+
+.navbar-nav li a:hover {
+  background-color: rgba(0,0,0,0.2);
+  color: #fff !important;
+}
+
+/* Header Section */
+header {
+  background-image: url("https://images.unsplash.com/photo-1500380804539-4e1e8c1e7118?q=80&w=2340&auto=format&fit=crop");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+#effect {
+  background: radial-gradient(circle, rgba(185,185,185,0.2), rgba(40,40,40, 0.6));
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+header h1 {
+  color: white;
+  font-size: 4em;
+  letter-spacing: 0.13em;
+  margin-bottom: 0.2em;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+header h3 {
+  font-weight: 300;
+  font-size: 1.5em;
+  letter-spacing: 0.15em;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+/* About Section */
+#about, #about2 {
+  padding: 60px;
+  background-color: #f7f7f7;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+}
+
+.about-contained {
+  font-size: 1.2em;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+#videos1, #videos2 {
+  text-align: center;
+  display: flex;
+  gap: 25px;
+  flex-direction: column !important;
+  justify-content: center;
+  align-items: center;
+}
+
+#videos1 iframe, #videos2 iframe {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Quote Sections */
+#quote, #quote2 {
+  padding: 40px;
+  background-color: #424242;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#quote i, #quote2 i {
+  font-size: 3em;
+  margin-right: 15px;
+  color: #fff;
+}
+
+#quote p, #quote2 p {
+  font-size: 1.5em;
+  border-left: 2px solid #fff;
+  padding-left: 15px;
+  font-weight: 300;
+}
+
+#containerQuote {
+  max-width: 70%;
+  display: inline-block;
+}
+
+/* Timeline Section */
+.timeline ul {
+  background: #456990;
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #F45B69;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -445px;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  transition: background 0.5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #F45B69;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Footer and More Information */
+#more {
+  background-color: #222;
+  color: #fff;
+  padding: 40px;
+  text-align: center;
+}
+
+#more a {
+  color: #4af;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+footer a {
+  color: #fff;
+  padding: 0 10px;
+}
+
+footer div a:hover i {
+  color: #4af;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li div {
+    width: calc(100vw - 90px);
+    left: 45px !important;
+  }
+
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #F45B69 transparent transparent;
+  }
+}
