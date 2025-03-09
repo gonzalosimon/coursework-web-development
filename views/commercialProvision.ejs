@@ -1,30 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Commercial Internet Provision</title>
-    <link rel="stylesheet" href="/style.css" />
-  </head>
-  <body>
-    <header>
-      <nav aria-label="Primary navigation">
-        <ul>
-          <li><a href="/timeline">Timeline</a></li>
-          <li><a href="/early-isps">Early ISPs</a></li>
-          <li><a href="/commercial-provision">Commercial Provision</a></li>
-        </ul>
-      </nav>
-      <h1>Commercial Internet Provision</h1>
-    </header>
 
-    <main>
-      <% commercialData.forEach(entry => { %>
-        <section>
-          <h2>Period: <%= entry.yearRange %></h2>
-          <p><strong>Major Providers:</strong> <%= entry.majorProviders.join(', ') %></p>
+<head>
+  <meta charset="utf-8" />
+  <title>Commercial Internet Provision</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" aria-label="Primary navigation">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/timeline">Timeline</a></li>
+        <li><a href="/early-isps">Early ISPs</a></li>
+        <li><a href="/commercial-provision">Commercial Provision</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header-commercial-provision">
+    <div id="effect" class="header-group">
+      <div class="header-first">
+        <div>
+          <h1 id="title">UK</h1>
+          <h1>Early Internet Service Providers</h1>
+        </div>
+
+        <ul class="page-nav nav navbar-nav">
+          <li><a href="#timeline">Timeline</a></li>
+        </ul>
+
+        <i class="fa fa-angle-down fa-4x icon" aria-hidden="true"></i>
+      </div>
+
+      <div class="header-second">
+        Photo by <a
+          href="https://unsplash.com/@rossjoyner?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ross
+          Joyner</a> on <a
+          href="https://unsplash.com/photos/trees-in-front-of-houses-TX6dBiMwBV0?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <% commercialData.forEach(entry=> { %>
+      <section>
+        <h2>Period: <%= entry.yearRange %>
+        </h2>
+        <p><strong>Major Providers:</strong>
+          <%= entry.majorProviders.join(', ') %></p>
           <p><%= entry.description %></p>
         </section>
       <% }); %>
     </main>
+
+      <!-- Footer -->
+  <section class="container-fluid text-center bg-dark text-white" id="more">
+    <footer>
+      <p>Gonzalo Simon</p>
+      <div>
+        <a target="_blank" href="https://www.linkedin.com/in/gonzalo-simon-aguilar">LinkedIn</a>
+        |
+        <a target="_blank" href="https://aguilargonzalo.com">Website</a>
+        |
+        <a target="_blank" href="https://github.com/gonzalosimon">GitHub</a>
+      </div>
+    </footer>
+  </section>
+  
   </body>
 </html>

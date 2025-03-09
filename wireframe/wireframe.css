@@ -237,61 +237,6 @@ li a:active {
   background: #f45b69;
 }
 
-/* Timeline Section */
-.timeline ul {
-  background: #456990;
-  padding: 50px 0;
-  list-style: none;
-}
-
-/* Timeline Items */
-.timeline ul li {
-  position: relative;
-  width: 6px;
-  margin: 0 auto;
-}
-
-/* Timeline Item Content */
-.timeline ul li div {
-  position: relative;
-  bottom: 0;
-  max-width: 400px;
-  /* Set max-width for large screens */
-  width: 100%;
-  padding: 15px;
-  background: #f45b69;
-  border-radius: 5px;
-  color: #fff;
-}
-
-/* Alternate Odd/Even Positioning */
-.timeline ul li:nth-child(odd) div {
-  left: 45px;
-}
-
-.timeline ul li:nth-child(even) div {
-  left: -445px;
-}
-
-/* Circular Points */
-.timeline ul li::after {
-  content: "";
-  position: absolute;
-  background: transparent;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  transition: background 0.5s ease-in-out;
-}
-
-/* Timeline Animation */
-.timeline ul li.in-view::after {
-  background: #f45b69;
-}
-
 .timeline ul li div {
   visibility: hidden;
   opacity: 0;
@@ -339,10 +284,10 @@ footer div a:hover i {
   color: #4af;
 }
 
-/* Responsive Fixes */
+/* Responsive adjustments */
 @media screen and (max-width: 900px) {
   .timeline ul li div {
-    max-width: 250px;
+    width: 250px;
   }
 
   .timeline ul li:nth-child(even) div {
@@ -352,27 +297,13 @@ footer div a:hover i {
 
 @media screen and (max-width: 600px) {
   .timeline ul li div {
-    width: 90%;
-    left: 0 !important;
-    margin: 10px auto;
+    width: calc(100vw - 90px);
+    left: 45px !important;
   }
 
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #f45b69 transparent transparent;
-  }
-}
-
-/* Navbar Fix for Mobile */
-@media screen and (max-width: 768px) {
-  .navbar-nav {
-    text-align: center;
-    float: none;
-  }
-
-  .navbar-nav li {
-    float: none;
-    display: block;
   }
 }

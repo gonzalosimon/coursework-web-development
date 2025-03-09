@@ -1,42 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Internet History Timeline</title>
-    <link rel="stylesheet" href="/style.css" />
-    <script src="/script.js" defer></script>
-  </head>
-  <body>
-    <header>
-      <nav aria-label="Primary navigation">
-        <ul>
-          <li><a href="/timeline">Timeline</a></li>
-          <li><a href="/early-isps">Early ISPs</a></li>
-          <li><a href="/commercial-provision">Commercial Provision</a></li>
-        </ul>
-      </nav>
-      <h1>Timeline of the Internet in the UK</h1>
-    </header>
 
-    <main>
-      <section class="timeline">
-        <ul>
-          <% timelineData.forEach(item => { %>
-            <li>
-              <div>
-                <h2><%= item.title %></h2>
-                <h3><%= item.year %></h3>
-                <p><%= item.content %></p>
-                <p><strong>Source:</strong> 
-                  <a href="<%= item.source %>" target="_blank">
-                    <%= item.source %>
-                  </a>
-                </p>
-              </div>
-            </li>
-          <% }); %>
+<head>
+  <meta charset="utf-8" />
+  <title>Internet History Timeline</title>
+  <link rel="stylesheet" href="/style.css" />
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" aria-label="Primary navigation">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/timeline">Timeline</a></li>
+        <li><a href="/early-isps">Early ISPs</a></li>
+        <li><a href="/commercial-provision">Commercial Provision</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="header-timeline">
+    <div id="effect" class="header-group">
+      <div class="header-first">
+        <div>
+          <h1 id="title">UK</h1>
+          <h1>Timeline of the Internet</h1>
+        </div>
+
+        <ul class="page-nav nav navbar-nav">
+          <li><a href="#timeline">Timeline</a></li>
         </ul>
-      </section>
-    </main>
-  </body>
+
+        <i class="fa fa-angle-down fa-4x icon" aria-hidden="true"></i>
+      </div>
+
+      <div class="header-second">
+        Photo by <a
+          href="https://unsplash.com/@benlambertmedia?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ben
+          Lambert</a> on <a
+          href="https://unsplash.com/photos/two-brown-leather-couches-beside-glass-window-RNOJMHP1TIg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="timeline">
+    <section id="about2">
+      <h2 class="about-title">Broadband and 5G Expansion</h2>
+
+      <p class="about-contained">
+        Broadband has seen major growth in England, with the government
+        investing heavily in fibre-optic networks and 5G expansion to improve
+        connectivity.
+      </p>
+    </section>
+  </main>
+
+  <section class="timeline">
+    <ul>
+      <% timelineData.forEach(item=> { %>
+        <li>
+          <div>
+            <h2>
+              <%= item.title %>
+            </h2>
+            <h3>
+              <%= item.year %>
+            </h3>
+            <p>
+              <%= item.content %>
+            </p>
+            <p><strong>Source:</strong>
+              <a href="<%= item.source %>" target="_blank">
+                <%= item.source %>
+              </a>
+            </p>
+          </div>
+        </li>
+        <% }); %>
+    </ul>
+  </section>
+  </main>
+
+  <!-- Footer -->
+  <section class="container-fluid text-center bg-dark text-white" id="more">
+    <footer>
+      <p>Gonzalo Simon</p>
+      <div>
+        <a target="_blank" href="https://www.linkedin.com/in/gonzalo-simon-aguilar">LinkedIn</a>
+        |
+        <a target="_blank" href="https://aguilargonzalo.com">Website</a>
+        |
+        <a target="_blank" href="https://github.com/gonzalosimon">GitHub</a>
+      </div>
+    </footer>
+  </section>
+</body>
+
 </html>

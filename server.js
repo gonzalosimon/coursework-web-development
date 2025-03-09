@@ -18,6 +18,7 @@ function loadJSONData(filename) {
     return [];
   }
 }
+// REMEMBER TO PUT THE AUTOR OF THE IMAGES!!!!
 
 // Introduction page (root)
 app.get("/", (req, res) => {

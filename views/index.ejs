@@ -1,66 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>History of the Internet in England</title>
-    <!-- External Resources -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway:300,400"
-      rel="stylesheet"
-    />
-    <!-- Your Custom Styles -->
-    <link rel="stylesheet" href="/style.css" />
-    <!-- Your Script (for animations, etc.) -->
-    <script src="/script.js" defer></script>
-  </head>
 
-  <body>
-    <!-- Nav Bar -->
-    <nav
-      class="navbar navbar-default navbar-fixed-top"
-      aria-label="Primary navigation"
-    >
-      <div class="container">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#videos1">Videos</a></li>
-          <li><a href="#about2">More Info</a></li>
-          <li><a href="#videos2">More Videos</a></li>
-          <li><a href="#timeline">Timeline</a></li>
-          <li><a href="#more">Footer</a></li>
-        </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>History of the Internet in England</title>
+  <!-- External Resources -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet" />
+  <!-- Your Custom Styles -->
+  <link rel="stylesheet" href="/style.css" />
+  <!-- Your Script (for animations, etc.) -->
+  <script src="/script.js" defer></script>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-default navbar-fixed-top" aria-label="Primary navigation">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li><a href="/timeline">Timeline</a></li>
+        <li><a href="/early-isps">Early ISPs</a></li>
+        <li><a href="/commercial-provision">Commercial Provision</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header>
+    <div id="effect">
+      <div>
+        <h1 id="title">England</h1>
+        <h3>History of the Internet</h3>
       </div>
-    </nav>
 
-    <!-- Header Section -->
-    <header>
-      <div id="effect">
-        <div>
-          <h1 id="title">England</h1>
-          <h3>History of the Internet</h3>
-        </div>
-        <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
-      </div>
-    </header>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#videos1">Videos</a></li>
+      </ul>
 
-    <!-- About Section 1 -->
+      <i class="fa fa-angle-down fa-4x icon" aria-hidden="true"></i>
+    </div>
+  </header>
+
+  <!-- About Section 1 -->
+  <main>
     <section id="about">
       <h2 class="about-title">Past 25 Years</h2>
       <p class="about-contained">
-        The internet in England has evolved significantly over the past 25
-        years. From slow dial-up connections to high-speed fibre and 5G
-        networks, England has played a crucial role in global digital
-        advancements.
+        The internet landscape in England has undergone a remarkable transformation over the past 25 years. On this
+        website, I have outlined the key milestones that have defined each year in this dynamic progression. You can
+        visit the timeline page to see the changes over the years. To learn more about the early Internet Service
+        Providers that first offered internet as a service, check out the dedicated page. Additionally, you can discover
+        how internet services became commercialized by visiting the commercial provision page.
       </p>
     </section>
 
@@ -68,13 +63,8 @@
     <section id="videos1">
       <h2>Internet Growth in England</h2>
 
-      <iframe
-        width="80%"
-        height="400"
-        src="https://www.youtube.com/embed/sMHzfigUxz4"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
+      <iframe width="80%" height="400" src="https://www.youtube.com/embed/sMHzfigUxz4" frameborder="0"
+        allowfullscreen></iframe>
     </section>
 
     <!-- About Section 2 -->
@@ -92,62 +82,24 @@
     <section id="videos2">
       <h2>The Future of Connectivity</h2>
 
-      <iframe
-        width="80%"
-        height="400"
-        src="https://www.youtube.com/embed/nLCAvIr9rWo"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
+      <iframe width="80%" height="400" src="https://www.youtube.com/embed/nLCAvIr9rWo" frameborder="0"
+        allowfullscreen></iframe>
     </section>
+  </main>
 
-    <!-- Timeline Intro -->
-    <section class="intro">
-      <div class="container" id="timeline">
-        <h1>Vertical Timeline &darr;</h1>
+  <!-- Footer -->
+  <section class="container-fluid text-center bg-dark text-white" id="more">
+    <footer>
+      <p class="footer-name">Gonzalo Simon Aguilar</p>
+      <div>
+        <a target="_blank" href="https://www.linkedin.com/in/gonzalo-simon-aguilar">LinkedIn</a>
+        |
+        <a target="_blank" href="https://aguilargonzalo.com">Website</a>
+        |
+        <a target="_blank" href="https://github.com/gonzalosimon">GitHub</a>
       </div>
-    </section>
+    </footer>
+  </section>
+</body>
 
-    <!-- Timeline Section (Populated by EJS) -->
-    <section class="timeline">
-      <ul id="timeline-list">
-        <% timelineData.forEach(item => { %>
-        <li>
-          <div>
-            <time><%= item.year %></time>
-
-            <strong><%= item.title %></strong>
-
-            <p><%= item.content %></p>
-
-            <small>
-              Source:
-              <a href="<%= item.source %>" target="_blank"
-                ><%= item.source %></a
-              >
-            </small>
-          </div>
-        </li>
-        <% }); %>
-      </ul>
-    </section>
-
-    <!-- Footer -->
-    <section class="container-fluid text-center bg-dark text-white" id="more">
-      <footer>
-        <p>Gonzalo Simon</p>
-        <div>
-          <a
-            target="_blank"
-            href="https://www.linkedin.com/in/gonzalo-simon-aguilar"
-            >LinkedIn</a
-          >
-          |
-          <a target="_blank" href="https://aguilargonzalo.com">Website</a>
-          |
-          <a target="_blank" href="https://github.com/gonzalosimon">GitHub</a>
-        </div>
-      </footer>
-    </section>
-  </body>
 </html>
