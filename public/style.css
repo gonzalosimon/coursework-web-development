@@ -75,10 +75,12 @@ header ul {
   flex-direction: column;
 }
 
+.title-group {
+  margin-top: 75px;
+}
+
 #effect {
-  background: radial-gradient(circle,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.8));
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8));
   height: 100%;
   width: 100%;
   display: flex;
@@ -103,7 +105,17 @@ header h3 {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
 
+.content {
+  padding: 60px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+
 /* About Section */
+.content,
 #about,
 #about2 {
   padding: 60px;
@@ -193,14 +205,15 @@ header h3 {
 .timeline ul li {
   list-style: none;
   position: relative;
-  width: 6px;
+  width: 6px; /* The vertical line thickness */
   margin: 0 auto;
+  background: #fff;
 }
 
 .timeline ul li div {
   position: relative;
   bottom: 0;
-  width: 400px;
+  width: 400px; /* default max for larger screens */
   padding: 15px;
   background: #f45b69;
   border-radius: 5px;
@@ -218,76 +231,16 @@ header h3 {
 .timeline ul li::after {
   content: "";
   position: absolute;
-  background: transparent;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  background: inherit;
   transition: background 0.5s ease-in-out;
 }
 
-li a:focus,
-li a:active {
-  background-color: transparent !important;
-}
-
-.timeline ul li.in-view::after {
-  background: #f45b69;
-}
-
-/* Timeline Section */
-.timeline ul {
-  background: #456990;
-  padding: 50px 0;
-  list-style: none;
-}
-
-/* Timeline Items */
-.timeline ul li {
-  position: relative;
-  width: 6px;
-  margin: 0 auto;
-}
-
-/* Timeline Item Content */
-.timeline ul li div {
-  position: relative;
-  bottom: 0;
-  max-width: 400px;
-  /* Set max-width for large screens */
-  width: 100%;
-  padding: 15px;
-  background: #f45b69;
-  border-radius: 5px;
-  color: #fff;
-}
-
-/* Alternate Odd/Even Positioning */
-.timeline ul li:nth-child(odd) div {
-  left: 45px;
-}
-
-.timeline ul li:nth-child(even) div {
-  left: -445px;
-}
-
-/* Circular Points */
-.timeline ul li::after {
-  content: "";
-  position: absolute;
-  background: transparent;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  transition: background 0.5s ease-in-out;
-}
-
-/* Timeline Animation */
 .timeline ul li.in-view::after {
   background: #f45b69;
 }
@@ -374,5 +327,32 @@ footer div a:hover i {
   .navbar-nav li {
     float: none;
     display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Let the 'li' expand so the content can be centered below it */
+  .timeline ul li {
+    width: auto;
+  }
+
+  /* Override the left offset for both odd/even items */
+  .timeline ul li div {
+    width: 90%; /* or 100%, as you prefer */
+    max-width: 400px; /* keep a maximum if you want */
+    margin: 15px auto; /* center the box */
+    left: 0 !important; /* override odd/even positioning */
+    transform: none !important; /* remove the horizontal slide effect */
+  }
+
+  .timeline ul li:nth-child(even) div,
+  .timeline ul li:nth-child(odd) div {
+    left: 0 !important;
+  }
+
+  /* If you use :before for arrows, remove or reposition them: */
+  .timeline ul li:nth-child(even) div::before,
+  .timeline ul li:nth-child(odd) div::before {
+    content: none; /* or adjust if you want arrows on the left edge */
   }
 }

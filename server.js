@@ -9,7 +9,13 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
 function loadJSONData(filename) {
+  if (!filename) {
+    console.error("Error loading JSON from file: filename is undefined");
+    return [];
+  }
+
   const filePath = path.join(__dirname, "data", filename);
+
   try {
     const raw = fs.readFileSync(filePath, "utf8");
     return JSON.parse(raw);
@@ -18,7 +24,6 @@ function loadJSONData(filename) {
     return [];
   }
 }
-// REMEMBER TO PUT THE AUTOR OF THE IMAGES!!!!
 
 // Introduction page (root)
 app.get("/", (req, res) => {
@@ -32,18 +37,29 @@ app.get("/", (req, res) => {
 // Timeline page
 app.get("/timeline", (req, res) => {
   const timelineData = loadJSONData("timelineData.json");
+  if (timelineData.length === 0) {
+    return res.status(500).send("Error loading timeline data");
+  }
   res.render("timeline", { timelineData });
 });
 
 // Early ISPs page
 app.get("/early-isps", (req, res) => {
   const earlyISPs = loadJSONData("earlyISPs.json");
+
+  if (earlyISPs.length === 0) {
+    return res.status(500).send("Error loading early ISPs data");
+  }
+
   res.render("earlyISPs", { earlyISPs });
 });
 
 // Commercial Provision page
 app.get("/commercial-provision", (req, res) => {
   const commercialData = loadJSONData("commercialProvision.json");
+  if (commercialData.length === 0) {
+    return res.status(500).send("Error loading commercial provision data");
+  }
   res.render("commercialProvision", { commercialData });
 });
 

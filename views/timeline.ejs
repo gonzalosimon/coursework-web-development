@@ -64,37 +64,39 @@
             <h2>
               <%= item.title %>
             </h2>
+
             <h3>
               <%= item.year %>
             </h3>
+
             <p>
               <%= item.content %>
             </p>
-            <p><strong>Source:</strong>
-              <a href="<%= item.source %>" target="_blank">
-                <%= item.source %>
-              </a>
-            </p>
+
+            <strong>Source:</strong>
+            
+            <a class="timeline-source" href="<%= item.source %>" target="_blank">
+              <%= item.source %>
+            </a>
           </div>
         </li>
+
         <% }); %>
     </ul>
   </section>
   </main>
 
   <!-- Footer -->
-  <section class="container-fluid text-center bg-dark text-white" id="more">
-    <footer>
-      <p>Gonzalo Simon</p>
-      <div>
-        <a target="_blank" href="https://www.linkedin.com/in/gonzalo-simon-aguilar">LinkedIn</a>
-        |
-        <a target="_blank" href="https://aguilargonzalo.com">Website</a>
-        |
-        <a target="_blank" href="https://github.com/gonzalosimon">GitHub</a>
-      </div>
-    </footer>
-  </section>
+  <footer id="more" class="container-fluid text-center bg-dark text-white">
+    <p>Gonzalo Simon</p>
+    <div>
+      <a target="_blank" href="https://www.linkedin.com/in/gonzalo-simon-aguilar">LinkedIn</a>
+      |
+      <a target="_blank" href="https://aguilargonzalo.com">Website</a>
+      |
+      <a target="_blank" href="https://github.com/gonzalosimon">GitHub</a>
+    </div>
+  </footer>
 </body>
 
 </html>

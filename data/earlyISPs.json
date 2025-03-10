@@ -1,12 +1,32 @@
 [
-    {
-      "ispName": "Demon Internet",
-      "foundedYear": 1992,
-      "content": "Demon Internet was among the UK's first independent ISPs. It gained popularity in the early 1990s by offering affordable dial-up services and pioneered nationwide consumer internet. By 1995, it supported over 10,000 subscribers, accelerating public online adoption."
-    },
-    {
-      "ispName": "Pipex",
-      "foundedYear": 1991,
-      "content": "Established as the first commercial ISP in the UK, Pipex worked closely with academic networks like JANET. Known for bridging commercial and research internet, it opened up new possibilities for businesses by providing reliable domain hosting and email services."
-    }
-  ]
+  {
+    "title": "Launch of Consumer Broadband Services",
+    "year": 2000,
+    "content": "In 2000, early independent ISPs began offering consumer broadband services in the UK. Providers such as NTL and Demon Internet transitioned from dial‐up to ADSL, introducing ‘always‐on’ connectivity that significantly improved speeds and reliability for early adopters.",
+    "source": "https://www.the-independent.com/tech/broadband-the-first-decade-1929515.html"
+  },
+  {
+    "title": "Introduction of Flat-Rate Pricing Models",
+    "year": 2001,
+    "content": "By 2001, independent ISPs adopted flat-rate pricing models that eliminated per-minute charges. This pricing innovation made broadband access more affordable and encouraged higher uptake as consumers were no longer penalised for prolonged usage.",
+    "source": "https://www.ispa.org.uk/celebrating-25-years/"
+  },
+  {
+    "title": "Local Loop Unbundling Spurs ISP Entry",
+    "year": 2002,
+    "content": "In 2002, the implementation of Local Loop Unbundling allowed new ISPs to access BT’s telephone exchanges. This regulatory change broke BT’s monopoly on the local loop, enabling independent providers like Pipex and Demon Internet to enter the market with competitive offerings.",
+    "source": "https://www.ofcom.org.uk/about-ofcom/our-website/regulator-archives"
+  },
+  {
+    "title": "Rise of Independent ISPs",
+    "year": 2004,
+    "content": "By 2004, independent ISPs such as Demon Internet had established themselves as viable alternatives to traditional dial‐up providers. Their competitive pricing, flexible packages, and customer-focused approaches contributed significantly to the broadband revolution in the UK.",
+    "source": "https://www.ispa.org.uk/celebrating-25-years/"
+  },
+  {
+    "title": "Market Consolidation and Service Innovation",
+    "year": 2007,
+    "content": "In 2007, the early ISP market underwent consolidation as smaller providers were merged or acquired, while technological innovations like ADSL2+ enabled higher speeds. This period marked a shift toward more competitive, customer-centric offerings that laid the foundation for the modern broadband market in the UK.",
+    "source": "https://www.reuters.com/article/uk-britain-digital-idUKTRE71041O20110201"
+  }
+]

@@ -1,13 +1,32 @@
 [
-    {
-      "yearRange": "1999–2004",
-      "majorProviders": ["BT Openworld", "NTL", "Telewest"],
-      "description": "Commercial broadband emerged, replacing slow dial-up connections. Key ISPs invested in DSL and cable internet, pushing speeds to 512 kbps and beyond. Customer uptake was initially limited but grew as line rental costs fell."
-    },
-    {
-      "yearRange": "2005–2010",
-      "majorProviders": ["BT Broadband", "Virgin Media", "Sky Broadband"],
-      "description": "Competition intensified, leading to better pricing and faster ADSL services. Virgin Media launched cable broadband packages up to 20 Mbps, while Sky entered the market offering bundled TV and internet deals, reshaping the commercial ISP landscape."
-    }
-  ]
-  
+  {
+    "title": "Explosion of Broadband Adoption",
+    "year": 2000,
+    "content": "In 2000, commercial internet provision in the UK began its rapid expansion as broadband started replacing dial-up connections. Providers rolled out ADSL services nationwide, leading to a dramatic increase in user adoption. This shift not only boosted internet speeds but also set the stage for a digital commerce boom.",
+    "source": "https://phys.org/news/2004-08-ofcom-publishes.html"
+  },
+  {
+    "title": "Government Initiatives Drive Infrastructure Expansion",
+    "year": 2002,
+    "content": "Between 2000 and 2002, government policies—such as Local Loop Unbundling and other regulatory reforms—spurred significant investment in broadband infrastructure. These initiatives opened the market to competition, enabling commercial providers to deploy faster and more reliable networks across both urban and rural areas.",
+    "source": "https://www.ofcom.org.uk/about-ofcom/our-website/regulator-archives"
+  },
+  {
+    "title": "Rise of Cable Broadband Providers",
+    "year": 2005,
+    "content": "By 2005, cable broadband emerged as a strong competitor to ADSL. Mergers among providers such as Telewest and NTL led to the formation of Virgin Media, which introduced high-speed cable internet packages. This development expanded consumer choice and accelerated the shift toward faster, more reliable broadband connectivity.",
+    "source": "https://www.thinkbroadband.com/news/3617-bt-announces-1-5bn-fibre-broadband-rollout"
+  },
+  {
+    "title": "Introduction of Competitive Pricing and Bundling",
+    "year": 2007,
+    "content": "In 2007, competitive pricing strategies and bundled service offerings transformed the commercial internet market. ISPs began offering attractive packages that combined broadband with television and telephone services, reducing costs for consumers and prompting increased market competition and service innovation.",
+    "source": "https://www.wired.com/story/smartphone-more-popular-than-laptop-ofcom-2015/"
+  },
+  {
+    "title": "Technological Upgrades Propel Next-Generation Services",
+    "year": 2009,
+    "content": "The late 2000s saw significant technological advancements in commercial internet provision. With improvements in ADSL2+ and the introduction of advanced cable modem standards, providers were able to offer much higher speeds. These upgrades laid the foundation for the fibre broadband revolution and ensured the UK remained at the forefront of digital connectivity.",
+    "source": "https://www.reuters.com/article/uk-britain-digital-idUKTRE71041O20110201"
+  }
+]
